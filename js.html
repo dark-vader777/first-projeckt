@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 1 -->
+
+    <!-- <script>
+    function sayilariBul() {
+        let sayilar = []
+    
+        for (let i = 10; i <= 100; i++) {
+            if (i % 10 == 0) {
+                sayilar.push(i)
+            }
+        }
+        return sayilar;
+    }
+    let sonuclar = sayilariBul()
+    console.log("sonu sifir ile bitenler", sonuclar);
+    </script> -->
+
+    <!-- 2 -->
+
+    <!-- <script>
+        let cem = 0
+        for(let i = 10; i<100; i++){
+            if(i % 2 == 1){
+                cem += i;
+            }
+        }
+        console.log(cem)
+    </script> -->
+
+    <!-- 3 -->
+
+    <!-- <script>
+let eded = prompt("Bir ədəd daxil edin:");
+let cem1 = 0;
+for(let i = 0; i<= 999; i++){
+    if(i % eded == 0){
+        cem1 += i;
+    }
+}
+console.log(cem1)
+</script> -->
+
+    <!-- 4 -->
+
+    <!-- <script>
+for(let i = 100; i <= 999; i++){
+    if(i % 7 == 0 && i % 8 == 0){
+        console.log(i)
+    }
+};
+</script> -->
+
+    <!-- 5 -->
+
+    <!-- <script>
+let cem = 0
+for(let i = 100; i <= 999; i++){
+    if(i % 7 == 0 && i % 8 == 0){
+        cem += i
+    }
+}
+console.log(cem);
+</script> -->
+
+    <!-- 6 -->
+
+    <!-- <script>
+let tapilanEded = null
+for(let i = 100; i<=999; i++){
+    if(i % 7 == 0 && i % 8 == 0){
+        tapilanEded = i
+        break
+    }
+}
+if(tapilanEded !== null){
+    console.log("tapilan eded", tapilanEded)
+} else{
+    console.log("eded tapilmadi");
+}
+    </script> -->
+
+    <!-- 7 -->
+
+    <!-- <script>
+
+    </script> -->
+
+    <!-- 8 -->
+
+    <!-- <script>
+function cutEdedler() {
+    var cem = 0; // Cəmi saxlamaq üçün bir dəyişən təyin et və sıfırla
+    var hasil = 1; // Hasılı saxlamaq üçün bir dəyişən təyin et və 1 ilə başla
+    for (var i = 2; i < 100; i += 2) {
+        console.log(i); // Hər cut ədədi konsola yazdır (isteğə bağlı)
+        cem += i;
+        hasil *= i;
+    }
+    return {
+        cəm: cem,
+        hasil: hasil
+    };
+}
+console.log(cutEdedler());
+
+     </script> -->
+
+    <!-- 9 -->
+
+    <!-- <script>
+        const ilkSayi = parseFloat(prompt("birinci sayiyi girin"))
+        const ikinciSayi = parseFloat(prompt("ikinci sayiyi girin"))
+        const operator = prompt("operatoru girin (+, -, *, /)")
+        let sonuc
+        switch (operator){
+            case '+':
+                sonuc = ilkSayi + ikinciSayi
+                break;
+            case '-':
+                sonuc = ilkSayi - ikinciSayi
+                break;
+            case '*':
+                sonuc = ilkSayi * ikinciSayi
+                break;
+            case '/':
+                sonuc = ilkSayi / ikinciSayi
+                break;
+            default:
+                console.log("yanlis sayi girdin")        
+        }
+        if(sonuc !== undefined){
+            console.log(sonuc);
+        }
+    </script> -->
+
+    <!-- 10 -->
+
+    <!-- <script>
+        const ayNomresi = parseInt(prompt("1 ve 12 arasi reqem secin"))
+        let fesil
+        switch (ayNomresi) {
+            case 12:
+            case 1:
+            case 2:
+                fesil = "Qis"
+                break;
+            case 3:
+            case 4:
+            case 5:
+                fesil = "Yaz"
+                break;
+            case 6:
+            case 7:
+            case 8:
+                fesil = "Yay"
+                break;
+            case 9:
+            case 10:
+            case 11:
+                fesil = "Payiz"
+                break;
+            default:
+                fesil = "Duzgun sira daxil edin!";
+        }
+        console.log(fesil);  
+    </script> -->
+
+    <!-- 11 -->
+
+    <!-- <script>
+        const cins = prompt("cinsinizi daxil edin")
+        let gender
+        switch (cins.toUpperCase()) {
+            case "M":
+                gender = "male"
+                break;
+            case "F":
+                gender = "famale"
+                break;
+            default:
+                console.log("duzgun daxil edin!")
+        }
+        if(gender){
+            console.log("siz", gender, "cinsindesiniz");
+        }
+    </script> -->
+
+    <!-- 12 -->
+
+    <!-- <script>
+        let metin = prompt("bir metin daxil et")
+        let tersMetin = ""
+        for (let i = metin.length - 1; i>=0; i--){
+        tersMetin += metin[i]
+        }
+        console.log(tersMetin);
+    </script> -->
+
+    <!-- 13 -->
+    <!-- 
+    <script>
+
+    </script> -->
+
+    <!-- 14 -->
+
+    <!-- <script>
+        let metin = prompt("metin daxil edin")
+        let reqemVarmi = false
+        for (let i = 0; i < metin.length; i++) {
+            if (!isNaN(metin[i])) {
+                reqemVarmi = true
+                break;
+            }
+        }
+        if (reqemVarmi) {
+            console.log("reqem var")
+        } else {
+            console.log("reqem yoxdur")
+        };
+    </script> -->
+
+    <!-- 15 -->
+<!-- 
+    <script>
+     const eded = prompt("Bir ədəd daxil edin: ");
+console.log("cixis:");
+console.log(eded.split("").join(" "));
+    </script> -->
+
+    <!-- 16 -->    
+    
+    <!-- <script>
+       let cumle = "buraya bir cumle   girin!"
+       let simvolSayi = cumle.length
+       console.log(simvolSayi);
+    </script> -->
+
+<!-- 17 -->
+
+<script>
+    // ! Girilen cumledeki soz sayi
+// let a = prompt("cumle daxil edin...")
+// let b = a.split(" ")
+// let c = b.length
+// console.log(c);
+// let wordCount = prompt("Cumleni daxil edin...").split(" ").length
+// console.log(wordCount);
+//? Array elementlerinin cemini / hasili  tapin
+// let a = [1, 5, 6, 3]
+// let sum = 1;
+// for(let i = 0; i < a.length; i++){
+//     sum *= a[i];
+// }
+// console.log(sum);
+//! array elementlerinin icindeki tekrarlanan elementleri sil
+// let a = [1, 3, 1, 5, 3, 8, 8];
+// let tekrarSil = new Set(a);
+// console.log(tekrarSil)
+//? Arrayin elementlerinden eded olmayanlari silin
+// let arr = [5, "s", 123, "sa"]
+// let onlyNum = arr.filter(a => typeof a === "number")
+// console.log(onlyNum);
+//! sozu tersine ceviren funksiya
+// let a = 'Girdiman'
+// let b = ''
+// for(i = a.length-1; i >= 0; i--){
+// b+=a[i];
+// }
+// console.log(b);
+//? Cumleni tersine ceviren funksiya yazin
+// let a = "Tabi siz anneleri tarafindan size emanet edilen kizlarin her bakimdan yetersiz gorduyunuz bir kadinin annelik etmesine siddetle karsiyiniz ya"
+// let b = ""
+// for(i = a.length - 1; i >= 0; i--){
+//     b += a[i]
+// }
+// console.log(b)
+
+
+
+
+
+
+ </script>
+</body>
+</html>

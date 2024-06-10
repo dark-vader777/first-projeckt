@@ -1,0 +1,46 @@
+* {
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F5F5F5;
+}
+
+.container {
+    display: flex;
+    float: 5;
+}
+
+.card {
+    width: 200px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 50px;
+    margin: 20px;
+    transition: transform 0.5s;
+    position: relative;
+    flex: 0.5;
+}
+
+.card.active {
+    transform: scale(1.2);
+    width: 300px;
+}
+
+.active h3 {
+    opacity: 1;
+    transition: opacity 0.9s ease-in 0.4s;
+}
+
+h3 {
+    color: white;
+}
+
+.card h3 {
+    position: absolute;
+    top: 320px;
+}

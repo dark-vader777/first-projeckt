@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .square {
+        width: 20px;
+        height: 20px;
+        background-color: grey;
+        margin: 2px;
+    }
+</style>
+<body>
+<div id="container"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let container = document.getElementById('container');
+
+        let colors = ['black', 'red', 'blue', 'yellow', 'green'];
+
+        function getRandomColor() {
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        for (let i = 0; i < 400; i++) {
+            let square = document.createElement('div');
+            square.className = 'square';
+
+
+            square.addEventListener('mouseover', function() {    //mouseover //click
+                let randomColor = getRandomColor();
+                this.style.backgroundColor = randomColor;
+            });
+
+
+            square.addEventListener('mouseout', function() {
+                let self = this;
+                setTimeout(function() {
+                    self.style.backgroundColor = 'gray';
+                }, 1000);
+            });
+
+            container.appendChild(square);
+        }
+    });
+</script>
+</body>
+</html>
